@@ -47,7 +47,7 @@ import { AllConfigType } from 'src/config/config.type';
             });
 
             return multerS3({
-              s3: s3,
+              s3: s3 as any,
               bucket: configService.getOrThrow('file.awsDefaultS3Bucket', {
                 infer: true,
               }),
