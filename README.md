@@ -1,41 +1,4 @@
-# NestJS REST API boilerplate 🇺🇦
-
-![github action status](https://github.com/brocoders/nestjs-boilerplate/actions/workflows/docker-e2e.yml/badge.svg)
-[![renovate](https://img.shields.io/badge/renovate-enabled-%231A1F6C?logo=renovatebot)](https://app.renovatebot.com/dashboard)
-
-## Description <!-- omit in toc -->
-
-NestJS REST API boilerplate for typical project
-
-[Full documentation here](https://github.com/brocoders/nestjs-boilerplate/blob/main/docs/readme.md)
-
-## Table of Contents <!-- omit in toc -->
-
-- [Features](#features)
-- [Quick run](#quick-run)
-- [Comfortable development](#comfortable-development)
-- [Links](#links)
-- [Automatic update of dependencies](#automatic-update-of-dependencies)
-- [Database utils](#database-utils)
-- [Tests](#tests)
-- [Tests in Docker](#tests-in-docker)
-- [Test benchmarking](#test-benchmarking)
-
-## Features
-
-- [x] Database ([typeorm](https://www.npmjs.com/package/typeorm)).
-- [x] Seeding.
-- [x] Config Service ([@nestjs/config](https://www.npmjs.com/package/@nestjs/config)).
-- [x] Mailing ([nodemailer](https://www.npmjs.com/package/nodemailer)).
-- [x] Sign in and sign up via email.
-- [x] Social sign in Google.
-- [x] Admin and User roles.
-- [x] I18N ([nestjs-i18n](https://www.npmjs.com/package/nestjs-i18n)).
-- [x] File uploads. Support local and Amazon S3 drivers.
-- [x] Swagger.
-- [x] E2E and units tests.
-- [x] Docker.
-- [x] CI (Github Actions).
+# NestJS REST API for Azure
 
 ## Quick run
 
@@ -85,10 +48,6 @@ npm run start:dev
 - Swagger: <http://localhost:3000/docs>
 - Adminer (client for DB): <http://localhost:8080>
 - Maildev: <http://localhost:1080>
-
-## Automatic update of dependencies
-
-If you want to automatically update dependencies, you can connect [Renovate](https://github.com/marketplace/renovate) for your project.
 
 ## Database utils
 

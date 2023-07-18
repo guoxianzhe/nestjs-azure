@@ -17,6 +17,11 @@ export type AuthConfig = {
   refreshExpires?: string;
 };
 
+export type AzureConfig = {
+  organizationName?: string;
+  personalAccessToken?: string;
+};
+
 export type DatabaseConfig = {
   url?: string;
   type?: string;
@@ -64,6 +69,7 @@ export type MailConfig = {
 export type AllConfigType = {
   app: AppConfig;
   auth: AuthConfig;
+  azure: AzureConfig;
   database: DatabaseConfig;
   file: FileConfig;
   google: GoogleConfig;

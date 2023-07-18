@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { UsersModule } from './users/users.module';
 import { FilesModule } from './files/files.module';
+import { AzureModule } from './azure/azure.module';
+
 import { AuthModule } from './auth/auth.module';
 import databaseConfig from './config/database.config';
 import authConfig from './config/auth.config';
@@ -22,6 +24,7 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 import { AllConfigType } from './config/config.type';
 import { SessionModule } from './session/session.module';
 import { MailerModule } from './mailer/mailer.module';
+import azureConfig from './config/azure.config';
 
 @Module({
   imports: [
@@ -30,6 +33,7 @@ import { MailerModule } from './mailer/mailer.module';
       load: [
         databaseConfig,
         authConfig,
+        azureConfig,
         appConfig,
         mailConfig,
         fileConfig,
@@ -68,6 +72,7 @@ import { MailerModule } from './mailer/mailer.module';
     }),
     UsersModule,
     FilesModule,
+    AzureModule,
     AuthModule,
     AuthGoogleModule,
     ForgotModule,
